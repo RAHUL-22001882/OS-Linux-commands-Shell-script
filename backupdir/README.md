@@ -474,25 +474,17 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 
 tar -cvf backup.tar \*
 
-![image](./images/s58.png)
-
 ## OUTPUT
 
 mkdir backupdir
 
 mv backup.tar backupdir
 
-![image](./images/s59.png)
-
 tar -tvf backup.tar
-
-![image](./images/s60.png)
 
 ## OUTPUT
 
 tar -xvf backup.tar
-
-![image](./images/s61.png)
 
 ## OUTPUT
 
@@ -500,13 +492,9 @@ gzip backup.tar
 
 ls .gz
 
-![image](./images/s62.png)
-
 ## OUTPUT
 
 gunzip backup.tar.gz
-
-![image](./images/s63.png)
 
 ## OUTPUT
 
@@ -517,12 +505,8 @@ echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 
-![image](./images/s64.png)
-
 chmod 755 my-script.sh
 ./my-script.sh
-
-![image](./images/s65.png)
 
 ## OUTPUT
 
@@ -535,11 +519,7 @@ for this non stop movement
 stop
 ```
 
-![image](./images/s66.png)
-
 cat herecheck.txt
-
-![image](./images/s67.png)
 
 ## OUTPUT
 
@@ -560,8 +540,6 @@ ps
 ^d
 ```
 
-![image](./images/s68.png)
-
 cat scriptest.sh
 
 ```bash
@@ -578,25 +556,17 @@ echo 'The $$ is ' $$
 ps
 ```
 
-![image](./images/s69.png)
-
 chmod 777 scriptest.sh
 
 ./scriptest.sh 1 2 3
-
-![image](./images/s70.png)
 
 ## OUTPUT
 
 ls file1
 
-![image](./images/s71.png)
-
 ## OUTPUT
 
 echo $?
-
-![image](./images/s72.png)
 
 ## OUTPUT
 
@@ -605,15 +575,11 @@ bash: ./one: Permission denied
 
 echo $?
 
-![image](./images/s73.png)
-
 ## OUTPUT
 
 abcd
 
 echo $?
-
-![image](./images/s74.png)
 
 ## OUTPUT
 
@@ -634,8 +600,6 @@ fi
 ^d
 ```
 
-
-
 cat strcomp.sh
 
 ```bash
@@ -650,15 +614,11 @@ echo "$val1 is less than $val2"
 fi
 ```
 
-![image](./images/s76.png)
-
-## OUTPUT
+##OUTPUT
 
 chmod 755 strcomp.sh
 
 ./strcomp.sh
-
-![image](./images/s77.png)
 
 ## OUTPUT
 
