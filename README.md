@@ -689,7 +689,11 @@ echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
 ```
 
+![image](./images/s78.png)
+
 ./psswdperm.sh
+
+![image](./images/s79.png)
 
 ## OUTPUT
 
@@ -740,7 +744,12 @@ echo “Sorry, the object does not exist”
 fi
 ```
 
+![image](./images/s81.png)
+
+
 ./ifnested.sh
+
+![image](./images/s80.png)
 
 ## OUTPUT
 
@@ -783,10 +792,15 @@ echo “The values are different”
 fi
 ```
 
+![image](./images/s82.png)
+
 $ chmod 755 iftest.sh
 
 $ ./iftest.sh
-##OUTPUT
+
+![image](./images/s83.png)
+
+## OUTPUT
 
 # check if a file
 
@@ -834,11 +848,15 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
+![image](./images/s84.png)
 
 $ chmod 755 ifnested.sh
 
 $ ./ifnested.sh
-##OUTPUT
+
+![image](./images/s85.png)
+
+## OUTPUT
 
 # looking for a possible value using elif
 
@@ -865,9 +883,13 @@ echo "Sorry, you are not allowed here"
 fi
 ```
 
+![image](./images/s86.png)
+
 $ chmod 755 elifcheck.sh
 
 $ ./elifcheck.sh
+
+![image](./images/s87.png)
 
 ## OUTPUT
 
@@ -885,8 +907,11 @@ echo "I cannot write to the file"
 fi
 ```
 
-$ chmod 755 ifcompound.sh
+$ chmod 755 ifcompound.sh 
+
 $ ./ifcompound.sh
+
+![image](./images/s88.png)
 
 ## OUTPUT
 
@@ -912,6 +937,8 @@ $ chmod 755 casecheck.sh
 
 $ ./casecheck.sh
 
+![image](./images/s89.png)
+
 cat > whiletest
 
 ```bash
@@ -929,6 +956,8 @@ $ chmod 755 whiletest.sh
 
 $ ./whiletest.sh
 
+![image](./images/s90.png)
+
 cat untiltest.sh
 
 ```bash
@@ -943,6 +972,10 @@ done
 
 $ chmod 755 untiltest.sh
 
+$ ./untiltest.sh
+
+![image](./images/s91.png)
+
 cat forin1.sh
 
 ```bash
@@ -954,20 +987,13 @@ echo The next state is $test
 done
 ```
 
+![image](./images/s92.png)
+
 $ chmod 755 forin1.sh
 
-cat forin2.sh
+$ ./forin1.sh
 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-
-$ chmod 755 forin2.sh
+![image](./images/s93.png)
 
 cat forin2.sh
 
@@ -984,6 +1010,8 @@ $ chmod 755 forin2.sh
 
 $ ./forin2.sh
 
+![image](./images/s94.png)
+
 cat forin3.sh
 
 ```bash
@@ -994,21 +1022,12 @@ do
 echo "word:$test"
 done
 ```
+$ chmod 755 forin3.sh
 
 $ ./forin3.sh
 
-cat forin1.sh
+![image](./images/s95.png)
 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-
-$ chmod 755 forin1.sh
 
 ## OUTPUT
 
