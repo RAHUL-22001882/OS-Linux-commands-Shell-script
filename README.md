@@ -1037,21 +1037,27 @@ cat forinfile.sh
 #!/bin/bash
 # reading values from a file
 file="cities"
-for state in `cat $file`
+for state in "cat $file"
 do
-echo "Visit beautiful $file“
+echo "Visit beautiful $state“
 done
 ```
 
 $ chmod 777 forinfile.sh
+
 $ cat cities
-Hyderabad
-Alampur
-Basara
-Warangal
-Adilabad
-Bhadrachalam
-Khammam
+
+Hyderabad <br>
+Alampur      <br>
+Basara<br>
+Warangal<br>
+Adilabad<br>
+Bhadrachalam<br>
+Khammam<br>
+
+![image](./images/s97.png)
+
+![image](./images/s96.png)
 
 ## OUTPUT
 
@@ -1069,6 +1075,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh
 
+![image](./images/s98.png)
+
 ## OUTPUT
 
 cat forctype1.sh
@@ -1084,6 +1092,8 @@ done
 
 $ chmod 755 forctype.sh
 $ ./forctype1.sh
+
+![image](./images/s99.png)
 
 ## OUTPUT
 
@@ -1106,6 +1116,8 @@ $ chmod 755 fornested1.sh
 
 $ ./fornested1.sh
 
+![image](./images/s100.png)
+
 ## OUTPUT
 
 cat forbreak.sh
@@ -1121,7 +1133,7 @@ break
 fi
 echo "Iteration number: $var1"
 done
-echo "The for loop is completed“
+echo "The for loop is completed"
 ```
 
 ## OUTPUT
@@ -1130,7 +1142,9 @@ $ chmod 755 forbreak.sh
 
 $ ./forbreak.sh
 
-cat forbreak.sh
+![image](./images/s101.png)
+
+cat forcontinue.sh
 
 ```bash
 #!/bin/bash
@@ -1143,12 +1157,14 @@ continue
 fi
 echo "Iteration number: $var1"
 done
-echo "The for loop is completed“
+echo "The for loop is completed"
 ```
 
 $ chmod 755 forcontinue.sh
 
 $ ./forcontinue.sh
+
+![image](./images/s102.png)
 
 ## OUTPUT
 
@@ -1166,6 +1182,8 @@ $ chmod 755 exread.sh
 
 $ ./exread.sh
 
+![image](./images/s103.png)
+
 ## OUTPUT
 
 cat exread1.sh
@@ -1179,9 +1197,12 @@ echo "Hello $name, welcome to my program. “
 
 $ chmod 755 exread1.sh
 
+$ ./exread1.sh
+
+![image](./images/s104.png)
+
 ## OUTPUT
 
-$ ./exread1.sh
 
 cat funcex.sh
 
@@ -1206,6 +1227,8 @@ fi
 
 ./funcex.sh 1 2
 
+![image](./images/s105.png)
+
 cat argshift.sh
 
 ```bash
@@ -1222,16 +1245,13 @@ $ chmod 777 argshift.sh
 
 $ ./argshift.sh 1 2 3
 
+![image](./images/s106.png)
+
 cat argshift1.sh
 
 ```bash
- #/bin/bash
- # store arguments in a special array
 args=("$@")
-# get number of elements
 ELEMENTS=${#args[@]}
- # echo each element in array
-# for loop
 for (( i=0;i<$ELEMENTS;i++)); do
     echo ${args[${i}]}
 done
@@ -1242,6 +1262,8 @@ $ chmod 777 argshift.sh
 ## OUTPUT
 
 $ ./argshift.sh 1 2 3
+
+![image](./images/s107.png)
 
 cat argshift.sh
 
@@ -1259,6 +1281,8 @@ set +x
 
 ./argshift.sh 1 2 3
 
+![image](./images/s108.png)
+
 cat > nc.awk
 
 ```bash
@@ -1268,12 +1292,15 @@ print len=length($0),"\t",$0
 wordcount+=NF
 chrcnt+=len
 }
-END {
+END{}
+{
 print "total characters",chrcnt
 print "Number of Lines are",NR
 print "No of Words count:",wordcount
 }
 ```
+
+![image](./images/s109.png)
 
 cat>data.dat
 
@@ -1290,7 +1317,11 @@ bcdfghj
 ubcdfghj
 ```
 
+![image](./images/s110.png)
+
 awk -f nc.awk data.dat
+
+![image](./images/s111.png)
 
 ## OUTPUT
 
@@ -1322,6 +1353,12 @@ fi
 ```
 
 ## OUTPUT
+
+$ chmod 755 palindrome.sh
+
+$ ./palindrome.sh
+
+![image](./images/s112.png)
 
 # RESULT:
 
